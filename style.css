@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #181018;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background: #232023;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #000a;
+  padding: 32px 20px 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  color: #b47aff;
+  margin-bottom: 18px;
+  text-align: center;
+}
+form, label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input, button, select {
+  font-size: 1rem;
+  padding: 10px 12px;
+  margin: 10px 0 0 0;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+input, select {
+  background: #181018;
+  color: #fff;
+  border: 1.5px solid #b47aff;
+  outline: none;
+  transition: border 0.2s;
+}
+input:focus, select:focus {
+  border: 2px solid #a259ff;
+}
+button {
+  background: linear-gradient(90deg, #a259ff 0%, #6d28d9 100%);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 18px;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px #a259ff33;
+}
+button:hover {
+  background: linear-gradient(90deg, #6d28d9 0%, #a259ff 100%);
+  transform: scale(1.03);
+}
+label {
+  margin-top: 16px;
+  color: #b47aff;
+  font-weight: 500;
+  align-items: flex-start;
+}
+#stream-preview, #live-player {
+  width: 100%;
+  min-height: 220px;
+  background: #181018;
+  border-radius: 10px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #a259ff22;
+}
+video {
+  width: 100%;
+  border-radius: 10px;
+  background: #000;
+}
+@media (max-width: 600px) {
+  #app {
+    max-width: 98vw;
+    padding: 18px 4vw 18px 4vw;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  input, button, select {
+    font-size: 0.98rem;
+    padding: 9px 8px;
+  }
+  #stream-preview, #live-player {
+    min-height: 140px;
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #232023;
+}
+::-webkit-scrollbar-thumb {
+  background: #a259ff;
+  border-radius: 8px;
+} 
